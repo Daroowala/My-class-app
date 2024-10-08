@@ -1,4 +1,5 @@
 import ButtonCom from './components/ButtonCom';
+import InputCom from './components/InputCom'
  
 function App() {
   const handleFirstButtonClick = () => {
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
     <div>
+      <InputCom />
       <ButtonCom label="Submit" onClick={handleFirstButtonClick} />
       <ButtonCom label="Reset" onClick={handleSecondButtonClick} />
     </div>
