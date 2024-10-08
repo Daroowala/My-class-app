@@ -1,21 +1,29 @@
 import ButtonCom from './components/ButtonCom';
-import InputCom from './components/InputCom'
+import InputCom from './components/InputCom';
+import './App.css'; 
+
  
 function App() {
-  const handleFirstButtonClick = () => {
+
+  const SubmitButtonClick = () => {
     alert('Submit Button clicked!');
   };
 
-  const handleSecondButtonClick = () => {
+  const ResetButtonClick = () => {
     alert('Reset Button clicked!');
+  };
+
+  const LoginButtonClick = () => {
+    alert('Login Button clicked!');
   };
 
   return (
     <>
     <div>
       <InputCom />
-      <ButtonCom label="Submit" onClick={handleFirstButtonClick} />
-      <ButtonCom label="Reset" onClick={handleSecondButtonClick} />
+      <ButtonCom label="Submit" onClick={SubmitButtonClick} />
+      <ButtonCom label="Reset" onClick={ResetButtonClick} />
+      <ButtonCom label="Login" onClick={LoginButtonClick} />
     </div>
     </>
   );

@@ -9,11 +9,9 @@ const InputCom = () => {
     };
   
     return (
-      <input
-        type="text"
-        value={inputValue}
-        onChange={handleChange}
-        placeholder="Enter text"
+      <input className='input1' style={{
+        
+      }} type="text"value={inputValue}onChange={handleChange} placeholder="Enter text"
       />
     );
   };

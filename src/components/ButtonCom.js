@@ -4,8 +4,7 @@ import React from 'react'
 const ButtonCom = ({label, onClick}) => {
   return (
     
-      <button onClick={onClick}>{label}
-    </button>
+      <button className='btn1'onClick={onClick}>{label}</button>
   )
 }
 
