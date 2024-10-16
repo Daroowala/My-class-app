@@ -13,7 +13,6 @@ const Navbar = () => {
               <a href="#about" className="text-white hover:text-gray-400">About Us</a>
             </div>
     
-            {/* Search Bar */}
             <div className="searchbar">
               <input
                 type="text"

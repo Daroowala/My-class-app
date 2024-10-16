@@ -1,33 +1,32 @@
-import ButtonCom from './components/ButtonCom';
-import InputCom from './components/InputCom';
-import Navbar from './Layout/Navbar';
+// import ButtonCom from './components/ButtonCom';
+// import InputCom from './components/InputCom';
+// import Navbar from './Layout/Navbar';
+import { Button } from "antd";
 import './index.css';
 import './App.css'; 
 
  
 function App() {
+const Button = () =>{
+  console.log('Button click')
+}
+  // const SubmitButtonClick = () => {
+  //   alert('Submit Button clicked!');
+  // };
 
-  const SubmitButtonClick = () => {
-    alert('Submit Button clicked!');
-  };
+  // const ResetButtonClick = () => {
+  //   alert('Reset Button clicked!');
+  // };
 
-  const ResetButtonClick = () => {
-    alert('Reset Button clicked!');
-  };
-
-  const LoginButtonClick = () => {
-    alert('Login Button clicked!');
-  };
+  // const LoginButtonClick = () => {
+  //   alert('Login Button clicked!');
+  // };
 
   return (
     <>
     <div>
-    <h1 className='text-[red] p-10'>Hello Tailwind</h1>
-      <InputCom />
-      <ButtonCom label="Submit" onClick={SubmitButtonClick} />
-      <ButtonCom label="Reset" onClick={ResetButtonClick} />
-      <ButtonCom label="Login" onClick={LoginButtonClick} />
-      <Navbar />
+   
+      <Button type= 'primary'>Submit</Button>
     </div>
     
     </>
